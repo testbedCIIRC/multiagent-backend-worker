@@ -1,0 +1,20 @@
+{
+	"command": "create_worker",
+	"worker_name": "worker_666",
+	"tasks": [{
+		"task_name": "task_1",
+		"command_string": "run_task_1",
+		"executable_path": "task_1_path"
+	}, {
+		"task_name": "task_2",
+		"command_string": "run_task_2",
+		"executable_path": "task_2_path"
+	}],
+	"Celery_app_name": "MainCeleryApp",
+	"Celery_broker_url": "amqp://0.0.0.0:5672",
+	"Celery_backend_url": "redis://0.0.0.0:6379",
+	"Celery_exchange": "celery_exchange",
+	"Reporting_broker_url": "localhost",
+	"Reporting_exchange ": "reporting_exchange ",
+	"Reporting_routing_key ": "celery_worker_report.worker_666 "
+}
